@@ -1,0 +1,16 @@
+{
+  "name": "azaafran",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass style.scss ./node_modules/bootstrap/dist/css/bootstrap.css -w --no-source-map -s compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "popper.js": "^1.16.0"
+  }
+}

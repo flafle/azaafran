@@ -1,0 +1,183 @@
+$gray-100: #f9ada0;
+$bgcolor: #fff5cb;
+$colorprimary: #f9ada0;
+$colorseconday: #ffe787 ;
+$colorwords: #7c6c77;
+$coloruse: black;
+
+
+$fontbase:20px;
+$fontlarge:40px;
+$fontmedium:$fontbase + 10px;
+
+
+
+h1, h3, h2, p, li, dd {
+    font-family: "pompiere";
+}
+h3 {
+    margin-top: 2rem;
+}
+dd {
+    font-style: italic;
+}
+li, dd {
+    font-size: $fontmedium;
+}
+.info__index
+{
+    font-size: $fontmedium;
+    font-style: italic;
+}
+@mixin estilos
+ { width: 250px;
+    height: auto;
+    margin: 30px;
+    border-radius: 20px;
+    transition: 0.5s;
+    display:inline-block;
+    box-shadow:0 20px 40px rgba(0, 0, 0, 0.5); 
+    
+}
+.img {
+    @include estilos;
+}
+.img:hover {
+        transform: translatex(-10px);
+}
+
+.video__index {
+    width: 80%;
+    height: auto;
+    margin: 3rem;
+    border-radius: 20px;
+    background-color:#ffe787;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    
+}
+//*redes footer/
+.rr {
+    height: auto;
+    color:white;
+    font-family: "pompiere";
+    font-size: $fontbase;
+}
+@mixin redes {
+    color: $coloruse;
+    font-size: $fontbase;
+    
+}
+.fa-google:before {
+    @include redes;
+}
+
+.fa-instagram:before {
+    @include redes ;
+}
+
+.fa-facebook-f:before {
+    @include redes;
+}
+.redes {
+            width: 100px;
+            height: auto;
+            margin:30px;
+            border-radius: 20px;
+            transition: 0.5s;
+            display:inline-block;
+            box-shadow:0 20px 40px rgba(0, 0, 0, 0.5); 
+        }
+        .redes:hover {
+                transform: translatex(-10px);
+        }
+
+.copyright {
+         font-family: "pompiere";
+         font-size: $fontbase;
+     }   
+   //*cards/
+     
+ .card {
+     margin: $fontbase;
+    border-radius: 20px;
+    align-items: center;
+    transition: 0.5s;
+    display:inline-block;
+    box-shadow:0 20px 40px rgba(0, 0, 0, 0.5); 
+}
+.card:hover {
+        transform: translatex(-10px);
+}
+ 
+   //*productos/
+   .productos {
+        width: 80%;
+        height: 80%;
+        margin: 60px;
+        border-radius: 20px;
+        align-items: center;
+        transition: 0.5s;
+        display:inline-block;
+        box-shadow:0 20px 40px rgba(0, 0, 0, 0.5); 
+    }
+    .productos:hover {
+            transform: translatex(-10px);
+    }
+    
+   
+//*contact/
+
+.info {
+    font-family: "pompiere";
+    color: &$colorwords;
+    margin-top: 2rem;
+}
+.principal__info {
+    @extend .info;
+    color: $colorprimary;
+}
+.form {
+
+    box-sizing: content-box;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #ffe78755, #ffe787 );
+    margin:6rem;
+    border-radius: 10px;
+    width: 30%;
+    height: 400px;
+    padding: 2rem 6rem;
+    font-family: "pompiere";
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.video {
+        width: 80%;
+        height: auto;
+        margin-left: 6rem ;
+        margin-bottom: 2rem;
+        border-radius: 20px;
+        background-color:#ffe787;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+        
+        
+ &__video {
+     width: 100%;
+     display:block;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+     margin-top: 1rem;
+
+     }   
+  &__title {   
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "pompiere";
+
+    }
+
+
+}
