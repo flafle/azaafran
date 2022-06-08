@@ -98,12 +98,18 @@ li, dd {
    //*cards/
      
  .card {
-     margin: $fontbase;
+     
     border-radius: 20px;
     align-items: center;
     transition: 0.5s;
     display:inline-block;
     box-shadow:0 20px 40px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 2rem;
+
+    &__imagen {
+             font-size: $fontlarge;
+             
+    }
 }
 .card:hover {
         transform: translatex(-10px);
@@ -142,7 +148,7 @@ li, dd {
     background-color: #e5e5f7;
     opacity: 0.8;
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #ffe78755, #ffe787 );
-    margin:6rem;
+    margin:3rem;
     border-radius: 10px;
     width: 30%;
     height: 400px;
@@ -155,7 +161,7 @@ li, dd {
 .video {
         width: 80%;
         height: auto;
-        margin-left: 6rem ;
+        margin-left: 2rem ;
         margin-bottom: 2rem;
         border-radius: 20px;
         background-color:#ffe787;
